@@ -2,7 +2,7 @@
 
 Next generation transistor level simulation (WIP)
 
-A fork of [visual6502remixed](https://github.com/floooh/v6502r) extended to support more chips
+A fork of [visual6502remixed](https://github.com/floooh/v6502r) extended to support more chips.
 Read about emulation of ancient ICs on my [blog](www.nerdstuffbycole.blogspot.com)
 
 WASM Version: Not yet implemented

@@ -34,7 +34,12 @@ fips_begin_lib(sokol)
         endif()
     endif()
 fips_end_lib()
-set(chippath "AY38500")#Change based on target chip
+#Change this based on targetted chip
+set(chippath "AY38500")
+#Options:
+#6502 -The legendary 6502
+#AY38500 -Currently just a 6502 with a renamed netlist
+
 fips_include_directories(unique/${chippath})
 fips_begin_app(NextSim windowed)
     fips_vs_warning_level(3)
