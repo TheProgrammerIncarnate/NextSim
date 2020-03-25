@@ -1,0 +1,20 @@
+{
+ "workspace_type": "File System Workspace",
+ "selected_config": "Debug",
+ "name": "NextSim",
+ "configs": [{
+   "name": "Debug",
+   "flags": 1,
+   "compile_flags": [],
+   "file_extensions": "*.cpp;*.c;*.txt;*.json;*.hpp;*.cc;*.cxx;*.xml;*.h;*.wxcp",
+   "executable": "",
+   "arguments": "",
+   "environment": "",
+   "compiler": "Cross GCC ( avr )",
+   "remoteFolder": "",
+   "remoteAccount": "",
+   "debugger": "GNU gdb debugger",
+   "excludeFilesPattern": "*.o;*.pyc;*.obj;*.workspace;*.o.d;*.exe;*.dll;*.project",
+   "targets": [["BandS", "python3 fips webpage build 6502\npython3 fips webpage serve 6502"], ["build", "python3 fips webpage build 6502"], ["clean", ""], ["serve", "python3 fips webpage serve 6502"]]
+  }]
+}

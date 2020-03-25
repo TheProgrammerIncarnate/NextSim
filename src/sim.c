@@ -3,8 +3,8 @@
 //
 //  Wrapper functions around perfect6502.
 //------------------------------------------------------------------------------
-#include "v6502r.h"
-#include "perfect6502.h"
+#include "main.h"
+#include "support.h"
 
 static void* p6502_state;
 

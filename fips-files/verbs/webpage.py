@@ -4,29 +4,29 @@ from mod import log, util, project
 BuildConfig = 'wasm-ninja-release'
 
 #-------------------------------------------------------------------------------
-def build_deploy_webpage(fips_dir, proj_dir):
+def build_deploy_webpage(fips_dir, proj_dir,chip):
     ws_dir = util.get_workspace_dir(fips_dir)
-    webpage_dir = '{}/fips-deploy/v6502r-webpage'.format(ws_dir)
+    webpage_dir = '{}/fips-deploy/{}-webpage'.format(ws_dir, chip)
     if not os.path.isdir(webpage_dir) :
         os.makedirs(webpage_dir)
-    
     project.gen(fips_dir, proj_dir, BuildConfig)
     project.build(fips_dir, proj_dir, BuildConfig)
-    
-    src_dir = '{}/fips-deploy/v6502r/{}'.format(ws_dir, BuildConfig)
+    proj_name = util.get_project_name_from_dir(proj_dir)
+    util.ensure_valid_project_dir(proj_dir)
+    src_dir = '{}/fips-deploy/NextSim/{}'.format(ws_dir, BuildConfig)
     dst_dir = webpage_dir
-
-    shutil.copy(src_dir+'/v6502r.html', dst_dir+'/index.html')
-    shutil.copy(src_dir+'/v6502r.wasm', dst_dir+'/v6502r.wasm')
-    shutil.copy(src_dir+'/v6502r.js', dst_dir+'/v6502r.js')
+    #This area can be cleaned up sometime
+    ns = "NextSim"
+    shutil.copy(src_dir+'/'+ns+'.html', dst_dir+'/index.html')
+    shutil.copy(src_dir+'/'+ns+'.wasm', dst_dir+'/'+ns+'.wasm')
+    shutil.copy(src_dir+'/'+ns+'.js', dst_dir+'/'+ns+'.js')
     shutil.copy(proj_dir+'/src/res/favicon.png', dst_dir+'/favicon.png')
-
     log.colored(log.GREEN, 'Generated Samples web page under {}.'.format(webpage_dir))
 
 #-------------------------------------------------------------------------------
-def serve_webpage(fips_dir, proj_dir) :
+def serve_webpage(fips_dir, proj_dir,chip) :
     ws_dir = util.get_workspace_dir(fips_dir)
-    webpage_dir = '{}/fips-deploy/v6502r-webpage'.format(ws_dir)
+    webpage_dir = '{}/fips-deploy/{}-webpage'.format(ws_dir, chip)
     p = util.get_host_platform()
     if p == 'osx' :
         try :
@@ -52,15 +52,15 @@ def serve_webpage(fips_dir, proj_dir) :
 
 #-------------------------------------------------------------------------------
 def run(fips_dir, proj_dir, args) :
-    if len(args) > 0 :
+    if len(args) == 2 :
         if args[0] == 'build' :
-            build_deploy_webpage(fips_dir, proj_dir)
+            build_deploy_webpage(fips_dir, proj_dir,args[1])
         elif args[0] == 'serve' :
-            serve_webpage(fips_dir, proj_dir)
+            serve_webpage(fips_dir, proj_dir,args[1])
         else :
             log.error("Invalid param '{}', expected 'build' or 'serve'".format(args[0]))
     else :
-        log.error("Param 'build' or 'serve' expected")
+        log.error("Param 'build' or 'serve' expected with a chip identifier")
 
 #-------------------------------------------------------------------------------
 def help() :
@@ -68,4 +68,4 @@ def help() :
              'fips webpage build\n' +
              'fips webpage serve\n' +
              log.DEF +
-             '    build the visual6502remix webpage')
+             '    build the visual6502remix webpage of the given chip')

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/NextSim.workspace">
+  <int Value="8" Name="m_selectedTab"/>
+  <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/NextSim.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/CMakeLists.txt" Name="FileName"/>
+      <int Value="26" Name="FirstVisibleLine"/>
+      <int Value="39" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/unique/6502/support_6502.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/main.h" Name="FileName"/>
+      <int Value="9" Name="FirstVisibleLine"/>
+      <int Value="20" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/chipvis.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="5" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/pick.c" Name="FileName"/>
+      <int Value="29" Name="FirstVisibleLine"/>
+      <int Value="45" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/unique/6502/segdefs.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/unique/6502/CMakeLists.txt" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="2" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/unique/6502/segdefs.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="1" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/cole/Documents/ChipWork/Simulation/NextSimDirectory/NextSim/src/unique/6502/support_6502.c" Name="FileName"/>
+      <int Value="8" Name="FirstVisibleLine"/>
+      <int Value="20" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.plist;*.txt" Name="m_findInFilesMask"/>
+</Session>

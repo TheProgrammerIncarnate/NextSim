@@ -4,7 +4,8 @@
 //  with triangle indices of picking canditates. Result of picking is 0..N
 //  node indices which are picked.
 //------------------------------------------------------------------------------
-#include "v6502r.h"
+#include "main.h"
+#include "segdefs.h"
 
 static float dot(float2_t v0, float2_t v1) {
     return v0.x*v1.x + v0.y*v1.y;

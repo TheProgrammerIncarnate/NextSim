@@ -2,7 +2,8 @@
 //  chipvis.c
 //  Chips visualization stuff.
 //------------------------------------------------------------------------------
-#include "v6502r.h"
+#include "main.h"
+#include "segdefs.h"
 #include "chipvis.glsl.h"
 
 static const palette_t default_palette = { {

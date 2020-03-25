@@ -1,0 +1,3 @@
+-I/usr/lib/gcc/avr/9.2.0/include
+-I/usr/lib/gcc/avr/9.2.0/include-fixed
+-I/usr/avr/include

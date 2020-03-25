@@ -3,7 +3,7 @@
 //
 //  UI code for the integrated assembler.
 //------------------------------------------------------------------------------
-#include "v6502r.h"
+#include "main.h"
 #include "TextEditor.h"
 #include "imgui_internal.h"
 

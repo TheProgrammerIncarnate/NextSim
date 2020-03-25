@@ -2,8 +2,9 @@
 //  trace.c
 //  Keep a history of chip state.
 //------------------------------------------------------------------------------
-#include "v6502r.h"
-#include "perfect6502.h"
+#include "main.h"
+#include "netlist.h"
+#include "support.h"
 #include <string.h>
 
 void trace_init(void) {
@@ -91,7 +92,7 @@ uint32_t trace_read_nodes(uint32_t trace_index, uint32_t count, uint32_t* node_i
     return result;
 }
 
-enum {
+/*enum {
 //    D1x1 = 827,
     a0 = 737,
     a1 = 1234,
@@ -269,15 +270,15 @@ enum {
     x5 = 589,
     x6 = 448,
     x7 = 777,
-    y0 = 64,
-    y1 = 1148,
+    y0new = 64, //Naming conflict with libc's math.h
+    y1new = 1148,
     y2 = 573,
     y3 = 305,
     y4 = 989,
     y5 = 615,
     y6 = 115,
     y7 = 843,
-};
+};*/
 
 uint32_t trace_get_cycle(uint32_t index) {
     uint32_t idx = trace_to_ring_index(index);
@@ -298,7 +299,7 @@ uint8_t trace_get_x(uint32_t index) {
 }
 
 uint8_t trace_get_y(uint32_t index) {
-    return trace_read_nodes(index, 8, (uint32_t[]){ y0,y1,y2,y3,y4,y5,y6,y7 });
+    return trace_read_nodes(index, 8, (uint32_t[]){ y0new,y1new,y2,y3,y4,y5,y6,y7 });
 }
 
 uint8_t trace_get_sp(uint32_t index) {

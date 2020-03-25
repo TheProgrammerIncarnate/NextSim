@@ -2,7 +2,7 @@
 //  gfx.c
 //  sokol-gfx init/shutdown, frame start/end.
 //------------------------------------------------------------------------------
-#include "v6502r.h"
+#include "main.h"
 
 void gfx_init(void) {
     sg_setup(&(sg_desc){

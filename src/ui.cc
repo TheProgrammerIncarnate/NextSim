@@ -3,7 +3,8 @@
 //------------------------------------------------------------------------------
 #include "imgui.h"
 #define CHIPS_IMPL
-#include "v6502r.h"
+#include "main.h"
+#include "nodenames.h"
 #include "res/fonts.h"
 #include "res/iconsfontawesome4_c.h"
 #include "res/markdown.h"
