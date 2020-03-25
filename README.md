@@ -1,14 +1,17 @@
-# v6502r
+# NextSim
 
-Visual6502 Remixed (WIP)
+Next generation transistor level simulation (WIP)
 
-WASM Version: https://floooh.github.io/visual6502remix/
+A fork of [visual6502remixed](https://github.com/floooh/v6502r) extended to support more chips
+Read about emulation of ancient ICs on my [blog](www.nerdstuffbycole.blogspot.com)
+
+WASM Version: Not yet implemented
 
 TL;DR: Take the [visual6502](https://github.com/trebonian/visual6502) project
 and turn it into a native+wasm app via
 [perfect6502](https://github.com/mist64/perfect6502), [Dear
 ImGui](https://github.com/ocornut/imgui/) and
-[Sokol](https://github.com/floooh/sokol).
+[Sokol](https://github.com/floooh/sokol) then expand it to support more chips
 
 ## Software used in this project:
 
@@ -28,8 +31,3 @@ Many thanks to:
 
 Please be aware of the various licenses in the respective
 github repositories, subdirectories and files.
-
-
-
-
-
